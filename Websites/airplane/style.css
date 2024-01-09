@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* 页面背景色 */
+}
+
+h1, h2, h3 {
+    color: #3498db; /* 主题颜色 - 蓝色 */
+}
+
+#map {
+    height: 500px;
+    background-color: #ffffff; /* 地图背景色 */
+}
+
+#aircraft-info {
+    margin-top: 20px;
+    background-color: #ffffff; /* 飞机信息查询背景色 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+label {
+    color: #3498db; /* 主题颜色 - 蓝色 */
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #3498db; /* 主题颜色 - 蓝色 */
+    border-radius: 5px;
+    background-color: #3498db; /* 主题颜色 - 蓝色 */
+    color: #ffffff; /* 文字颜色 - 白色 */
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: #95a5a6; /* 占位符颜色 - 灰色 */
+}
+
+button:hover {
+    background-color: #2c3e50; /* 按钮悬停时的背景色 */
+}
+
+#result {
+    margin-top: 15px;
+}
+
+/* 副主题颜色 - 黄色 */
+h2, p {
+    color: #f39c12;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* 图片阴影效果 */
+}

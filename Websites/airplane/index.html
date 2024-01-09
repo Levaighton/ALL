@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飞机型号查询</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #search-form {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #result-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #plane-image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>飞机型号查询</h1>
+
+    <div id="search-form">
+        <label for="plane-search">输入飞机型号：</label>
+        <input type="text" id="plane-search" placeholder="例如 A380">
+        <button onclick="searchPlane()">查询</button>
+    </div>
+
+    <div id="result-container">
+        <!-- 查询结果将在此显示 -->
+    </div>
+
+    <script>
+        function searchPlane() {
+            // 获取用户输入的飞机型号
+            var planeModel = document.getElementById('plane-search').value;
+
+            // 模拟从数据库或其他数据源获取飞机信息和照片的过程
+            // 这里使用一个包含型号和照片URL的简单对象作为演示
+            var planeData = getPlaneData(planeModel);
+
+            // 将结果显示在页面上
+            var resultContainer = document.getElementById('result-container');
+            resultContainer.innerHTML = '<h2>' + planeModel + ' 信息：</h2>' +
+                '<p>' + planeData.info + '</p>' +
+                '<img id="plane-image" src="' + planeData.imageUrl + '" alt="' + planeModel + '">';
+        }
+
+        function getPlaneData(model) {
+            // 这里可以替换成从数据库或其他数据源获取飞机信息和照片的逻辑
+            // 这里仅作为演示，返回一个包含信息和照片URL的对象
+            switch (model.toUpperCase()) {
+                case 'A380':
+                    return {
+                        info: '空客A380是一款大型双层客机，由欧洲空中客车公司生产。',
+                        imageUrl: 'https://example.com/a380.jpg'
+                    };
+                case 'BOEING 747':
+                    return {
+                        info: '波音747是一款大型四发喷气式飞机，由波音公司生产。',
+                        imageUrl: 'https://example.com/boeing747.jpg'
+                    };
+                // 可以添加更多的飞机型号和信息
+                default:
+                    return {
+                        info: '找不到相关信息。',
+                        imageUrl: 'https://example.com/notfound.jpg'
+                    };
+            }
+        }
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飞机型号查询</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #search-form {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #result-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #plane-image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>飞机型号查询</h1>
+
+    <div id="search-form">
+        <label for="plane-search">输入飞机型号：</label>
+        <input type="text" id="plane-search" placeholder="例如 A380">
+        <button onclick="searchPlane()">查询</button>
+    </div>
+
+    <div id="result-container">
+        <!-- 查询结果将在此显示 -->
+    </div>
+
+    <script>
+        function searchPlane() {
+            // 获取用户输入的飞机型号
+            var planeModel = document.getElementById('plane-search').value;
+
+            // 模拟从数据库或其他数据源获取飞机信息和照片的过程
+            // 这里使用一个包含型号和照片URL的简单对象作为演示
+            var planeData = getPlaneData(planeModel);
+
+            // 将结果显示在页面上
+            var resultContainer = document.getElementById('result-container');
+            resultContainer.innerHTML = '<h2>' + planeModel + ' 信息：</h2>' +
+                '<p>' + planeData.info + '</p>' +
+                '<img id="plane-image" src="' + planeData.imageUrl + '" alt="' + planeModel + '">';
+        }
+
+        function getPlaneData(model) {
+            // 这里可以替换成从数据库或其他数据源获取飞机信息和照片的逻辑
+            // 这里仅作为演示，返回一个包含信息和照片URL的对象
+            switch (model.toUpperCase()) {
+                case 'A380':
+                    return {
+                        info: '空客A380是一款大型双层客机，由欧洲空中客车公司生产。',
+                        imageUrl: 'https://example.com/a380.jpg'
+                    };
+                case 'BOEING 747':
+                    return {
+                        info: '波音747是一款大型四发喷气式飞机，由波音公司生产。',
+                        imageUrl: 'https://example.com/boeing747.jpg'
+                    };
+                // 可以添加更多的飞机型号和信息
+                default:
+                    return {
+                        info: '找不到相关信息。',
+                        imageUrl: 'https://example.com/notfound.jpg'
+                    };
+            }
+        }
+    </script>
+
+</body>
+</html>

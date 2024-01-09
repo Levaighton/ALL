@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Booking Classroom</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Booking Classroom</h1>
+        <form id="selectClassroomsForm" onsubmit="selectClassrooms(event)">
+            <h2>Select Classrooms</h2>
+            <div>
+                <label for="smallClassrooms">Small Classrooms</label>
+                <input type="number" id="smallClassrooms" name="smallClassrooms" min="0" value="0">
+            </div>
+            <div>
+                <label for="middleClassrooms">Middle-sized Classrooms</label>
+                <input type="number" id="middleClassrooms" name="middleClassrooms" min="0" value="0">
+            </div>
+            <div>
+                <label for="bigClassrooms">Big Classrooms</label>
+                <input type="number" id="bigClassrooms" name="bigClassrooms" min="0" value="0">
+            </div>
+            <a href="booking-confirmation.html">Book Selected Classroom(s)</a>
+        </form>
+        <div id="availability">
+            <h2>Classroom Availability</h2>
+            <p id="smallAvailability">Small Classrooms Available: <span></span></p>
+            <p id="middleAvailability">Middle-sized Classrooms Available: <span></span></p>
+            <p id="bigAvailability">Big Classrooms Available: <span></span></p>
+        </div>
+        <a href="booking-confirmation.html">Go to Confirmation Page</a>
+    </div>
+    <script src="app.js"></script>
+    <script src="select-classrooms.js"></script>
+</body>
+</html>
